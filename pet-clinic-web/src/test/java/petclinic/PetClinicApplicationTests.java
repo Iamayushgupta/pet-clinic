@@ -1,8 +1,8 @@
-package ayush.springframework.petclinic;
+package petclinic;
 
 import org.junit.jupiter.api.Test;
 
-class PetClinicApplicationTest {
+class PetClinicApplicationTests {
     @Test
     void contextLoads() {
     }
