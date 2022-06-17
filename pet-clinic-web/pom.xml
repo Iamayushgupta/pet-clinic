@@ -7,6 +7,7 @@
         <groupId>ayush.springframework</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pet-clinic-web</artifactId>
@@ -16,23 +17,32 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <dependencies>
+<!--        Actuator-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+
+<!--        ThymeLeaf-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+
+<!--        StarterWeb-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+<!--        pet-clinic-data-->
         <dependency>
             <artifactId>pet-clinic-data</artifactId>
             <groupId>ayush.springframework</groupId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+<!--        DevTools-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -40,6 +50,7 @@
             <optional>true</optional>
         </dependency>
 
+<!--        Starter Test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -47,6 +58,5 @@
         </dependency>
 
     </dependencies>
-
 
 </project>
