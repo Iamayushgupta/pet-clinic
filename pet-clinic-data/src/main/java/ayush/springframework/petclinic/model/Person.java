@@ -9,6 +9,11 @@ public class Person extends BaseEntity{
         this.lastName = lastName;
     }
 
+    // Adding empty Constructor
+    public Person(){
+
+    }
+
     public String getFirstName() {
         return firstName;
     }
