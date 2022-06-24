@@ -6,7 +6,6 @@
 	<artifactId>pet-clinic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
     <packaging>pom</packaging>
 
 	<name>pet-clinic</name>
@@ -25,10 +24,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-
-
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
