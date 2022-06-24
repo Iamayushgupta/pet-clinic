@@ -4,8 +4,6 @@ import ayush.springframework.petclinic.model.Owner;
 import ayush.springframework.petclinic.model.Vet;
 import ayush.springframework.petclinic.services.OwnerService;
 import ayush.springframework.petclinic.services.VetService;
-import ayush.springframework.petclinic.services.map.OwnerServiceMap;
-import ayush.springframework.petclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -13,10 +11,14 @@ import org.springframework.stereotype.Component;
 public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+
+    // No need of AutoWiring
+    //Constructor Injection
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
+
 
     @Override
     public void run(String... args) throws Exception {

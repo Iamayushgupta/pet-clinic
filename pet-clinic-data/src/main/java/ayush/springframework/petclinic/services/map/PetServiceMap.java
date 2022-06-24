@@ -3,9 +3,11 @@ package ayush.springframework.petclinic.services.map;
 import ayush.springframework.petclinic.model.Pet;
 import ayush.springframework.petclinic.services.CrudService;
 import ayush.springframework.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
 
     @Override
