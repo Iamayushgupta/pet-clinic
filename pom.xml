@@ -44,7 +44,7 @@
 					<artifactId>maven-plugin-plugin</artifactId>
 					<version>3.5.2</version>
 					<configuration>
-						<goals>install</goals>
+<!--						<goals>install</goals>-->
 					</configuration>
 				</plugin>
 			</plugins>
