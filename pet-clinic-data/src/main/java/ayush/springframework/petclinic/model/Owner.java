@@ -1,11 +1,15 @@
 package ayush.springframework.petclinic.model;
 
+import java.util.Set;
+
 public class Owner extends Person{
-    public Owner(String firstName, String lastName) {
-        super(firstName, lastName);
+    private Set<Pet> pets ;
+
+    public Set<Pet> getPets() {
+        return pets;
     }
 
-    public Owner() {
-        super();
+    public void setPets(Set<Pet> pets) {
+        this.pets = pets;
     }
 }
